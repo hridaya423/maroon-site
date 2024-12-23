@@ -72,6 +72,7 @@ bark type_val`
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <p className="text-gray-300">Experience the power of Maroon with our interactive playground</p>
+                  <a href="/ide">
                   <button className="group relative px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-lg overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
                     <span className="relative flex items-center justify-center space-x-2">
@@ -79,6 +80,7 @@ bark type_val`
                       <span>Launch Playground</span>
                     </span>
                   </button>
+                  </a>
                 </div>
                 <div className="bg-black/50 rounded-lg p-4">
                   <pre className="text-sm font-mono text-gray-300">
