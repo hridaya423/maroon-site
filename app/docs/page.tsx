@@ -100,58 +100,43 @@ sentence be words join ", "`}</code>
             </div>
           </div>
 
-           <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-              <h3 className="flex items-center text-lg font-semibold mb-4">
-                <RefreshCw className="w-5 h-5 mr-2 text-red-500" />
-                Math & Randomization
-              </h3>
-              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
-                <code>{`bark roll_dice sails with 20
-bark random_float sails with
-bark random_float sails with 10, 20
-
-crew be list of 1, 2, 3, 4, 5
-bark random_pick sails with crew
-bark random_sample sails with crew, 3
-bark normal_random sails with
-
-# Math operations 
-x be 5
-bark factorial sails with x
-
-angle be 3.14159
-bark sin sails with angle
-bark cos sails with angle
-bark tan sails with angle
-
-bark exp sails with 2
-bark log sails with 10
-bark log sails with 8, 2
-
-# Statistical operations
-numbers be list of 2, 4, 6, 8, 10
-bark mean sails with numbers
-bark median sails with numbers
-bark sum sails with numbers
-
-# Gaming functions
-bark flip_coin sails with
-bark roll_multiple sails with 3, 6
-bark roll_multiple sails with 2, 20`}</code>
-              </pre>
-            </div>
-
-          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+          <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
             <h3 className="flex items-center text-lg font-semibold mb-4">
               <Hash className="w-5 h-5 mr-2 text-red-500" />
               Switch Statements
             </h3>
-            <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
               <code>{`choose x:
     case 1: bark "one"
     case 2: bark "two"
     default: bark "unknown"
 end choose`}</code>
+            </pre>
+          </div>
+          <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <h3 className="flex items-center text-lg font-semibold mb-4">
+              <Hash className="w-5 h-5 mr-2 text-red-500" />
+              Math and Randomization
+            </h3>
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`roll_dice sails with 20
+random_float sails with 10,20
+crew be list of 1,2,3,4,5
+random_pick sails with crew
+random_sample sails with crew, 3
+normal_random,
+factorial sails with 5
+sin sails with 1
+cos sails with 2
+tan sails with 3
+exp sails with 1
+log sails with 2
+mean sails with list of 1, 2, 3
+median sails with list of 1, 2, 3, 1, 2
+sum sails with list of 1, 2, 3, 6
+flip_coin sails with
+roll_multiple sails with 3, 6
+              `}</code>
             </pre>
           </div>
         </div>
