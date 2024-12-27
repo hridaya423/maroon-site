@@ -9,19 +9,26 @@ const FeaturesPage = () => {
   const features = [
     {
       icon: Code,
-      title: "Pirate-Themed Syntax",
-      description: "Write code that flows like a sea shanty with our unique syntax",
-      demo: `treasure be 100 \nvoyage double(n):\n result be n times 2 \n return result`
+      title: "First Mate",
+      description: "Your trusty companion who's gonna help you sail through Maroon",
+      demo: ``
     },
     {
       icon: Map,
-      title: "Debug Chest",
-      description: "Powerful debugging tools to help you navigate through rough seas of code.",
+      title: "Dialects",
+      description: "Change the syntax to your liking, ye scurvy programmer.",
       demo: `
-debug_chest
+dialect Caribbean:
+    "shout" be "bark"
+    "expedition" be "voyage"
+    "treasure" be "variable"
+    "sail_with" be "sails with"
+end dialect
 
-type_val be type_of sails with treasure
-bark type_val`
+# Define the function
+expedition greet(txt):      
+    shout txt      
+end expedition`
     },
     {
       icon: ShipIcon,
@@ -72,7 +79,6 @@ bark type_val`
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <p className="text-gray-300">Experience the power of Maroon with our interactive playground</p>
-                  <a href="/ide">
                   <button className="group relative px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-lg overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
                     <span className="relative flex items-center justify-center space-x-2">
@@ -80,7 +86,6 @@ bark type_val`
                       <span>Launch Playground</span>
                     </span>
                   </button>
-                  </a>
                 </div>
                 <div className="bg-black/50 rounded-lg p-4">
                   <pre className="text-sm font-mono text-gray-300">
