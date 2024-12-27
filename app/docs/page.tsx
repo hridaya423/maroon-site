@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Ship, Compass, Skull, Anchor, Package, BookOpen, Hash, Code } from 'lucide-react';
+import { Terminal, Ship, Compass, Skull, Anchor, Package, BookOpen, Hash, Code, Clover, Languages, Filter, RefreshCw } from 'lucide-react';
 
 export default function MaroonDocs() {
   return (
@@ -21,6 +21,101 @@ export default function MaroonDocs() {
         </div>
 
         <div className="mb-16">
+        <div className="border border-red-500/20 bg-red-500/5 rounded-lg p-6 mx-auto mb-16">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-400">
+              New in v1.1
+            </h2>
+            <span className="animate-pulse bg-red-500/10 px-3 py-1 rounded-full text-red-400 text-sm">
+              NEW
+            </span>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+              <h3 className="flex items-center text-lg font-semibold mb-4">
+                <RefreshCw className="w-5 h-5 mr-2 text-red-500" />
+                Loop Enhancements
+              </h3>
+              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                <code>{`# While loops with comparisons
+while counter be less_than 3 bark counter
+
+# Plunder (forEach) loops
+plunder each coin from treasure_chest:
+    bark coin
+end plunder
+
+# Simple repeat loops
+repeat 3 times bark "BOOM!"`}</code>
+              </pre>
+            </div>
+
+            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+              <h3 className="flex items-center text-lg font-semibold mb-4">
+                <Clover className="w-5 h-5 mr-2 text-red-500" />
+                Error Handling
+              </h3>
+              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                <code>{`brace for impact:
+    bark "Attempting dangerous waters"
+if capsized, bark "Error, Capsized!"`}</code>
+              </pre>
+            </div>
+
+            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+              <h3 className="flex items-center text-lg font-semibold mb-4">
+                <Filter className="w-5 h-5 mr-2 text-red-500" />
+                Advanced List Operations
+              </h3>
+              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                <code>{`# Map with inline operations
+coins be list of 1, 2, 3 where each times 2
+
+# Filter lists
+big_coins be coins where it greater_than 5
+
+# Reduce operation
+total be reduce coins with result plus it`}</code>
+              </pre>
+            </div>
+
+            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+              <h3 className="flex items-center text-lg font-semibold mb-4">
+                <Languages className="w-5 h-5 mr-2 text-red-500" />
+                Dialects & String Operations
+              </h3>
+              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                <code>{`# Custom dialects
+dialect Caribbean:
+    "shout" be "bark"
+    "expedition" be "voyage"
+end dialect
+
+# String operations
+greeting be "hello world" upper
+words be greeting split " "
+sentence be words join ", "`}</code>
+              </pre>
+            </div>
+          </div>
+
+          <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <h3 className="flex items-center text-lg font-semibold mb-4">
+              <Hash className="w-5 h-5 mr-2 text-red-500" />
+              Switch Statements
+            </h3>
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`choose x:
+    case 1: bark "one"
+    case 2: bark "two"
+    default: bark "unknown"
+end choose`}</code>
+            </pre>
+          </div>
+        </div>
+      <div className="grid gap-4">
+        </div>
           <div className="flex items-center mb-6">
             <Compass className="w-6 h-6 mr-2 text-red-500" />
             <h2 className="text-2xl font-bold text-white">Quick Start</h2>
