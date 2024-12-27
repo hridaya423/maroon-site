@@ -7,21 +7,22 @@ const navigationData = {
     items: [
       { title: "Quick Start", href: "/docs" },
       { title: "Examples", href: "/examples" },
-      { title: "IDE", href: "/ide" }
+      { title: "IDE", href: "/ide" },
+      { title: "Updates", href: "/updates" }
     ],
   },
   "Crew's Quarters": {
     icon: MessageSquare,
     items: [
       { title: "GitHub", href: "https://github.com/hridaya423/maroon" },
-      { title: "Website", href: "https://localhost:3000" }
+      { title: "Website", href: "https://maroon-site.vercel.app" }
     ],
   }
 };
 
 const socialLinks = [
   { Icon: Github, href: "https://github.com/hridaya423/maroon" },
-  { Icon: Chrome, href: "https://localhost:3000" }
+  { Icon: Chrome, href: "https://maroon-site.vercel.app" }
 ];
 
 export const Footer = () => {
