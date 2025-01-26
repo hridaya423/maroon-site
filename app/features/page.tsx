@@ -81,10 +81,12 @@ end expedition`
                   <p className="text-gray-300">Experience the power of Maroon with our interactive playground</p>
                   <button className="group relative px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-lg overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
+                    <a href="/ide">
                     <span className="relative flex items-center justify-center space-x-2">
                       <Ship className="w-5 h-5" />
                       <span>Launch Playground</span>
                     </span>
+                    </a>
                   </button>
                 </div>
                 <div className="bg-black/50 rounded-lg p-4">

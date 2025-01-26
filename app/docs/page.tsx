@@ -7,7 +7,6 @@ export default function MaroonDocs() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,black_100%)]" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
-
         <div className="text-center mb-16">
           <h1 className="relative inline-block">
             <span className="absolute -inset-1 bg-gradient-to-r from-red-600 via-red-500 to-red-700 blur-2xl opacity-50 animate-pulse" />
@@ -21,127 +20,116 @@ export default function MaroonDocs() {
         </div>
 
         <div className="mb-16">
-        <div className="border border-red-500/20 bg-red-500/5 rounded-lg p-6 mx-auto mb-16">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-400">
-              New in v1.1
-            </h2>
-            <span className="animate-pulse bg-red-500/10 px-3 py-1 rounded-full text-red-400 text-sm">
-              NEW
-            </span>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-              <h3 className="flex items-center text-lg font-semibold mb-4">
-                <RefreshCw className="w-5 h-5 mr-2 text-red-500" />
-                Loop Enhancements
-              </h3>
-              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
-                <code>{`# While loops with comparisons
-while counter be less_than 3 bark counter
+          <div className="border border-red-500/20 bg-red-500/5 rounded-lg p-6 mx-auto mb-16">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-400">
+                New in v1.2
+              </h2>
+              <span className="animate-pulse bg-red-500/10 px-3 py-1 rounded-full text-red-400 text-sm">
+                NEW
+              </span>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+                <h3 className="flex items-center text-lg font-semibold mb-4">
+                  <Languages className="w-5 h-5 mr-2 text-red-500" />
+                  Default Parameters & Functions
+                </h3>
+                <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                  <code>{`# Functions with default values
+voyage sail_to(destination, speed be 10):
+    bark "Sailing to", destination, 
+         "at", speed, "knots!"
+end voyage
 
-# Plunder (forEach) loops
-plunder each coin from treasure_chest:
-    bark coin
-end plunder
+sail_to sails with "Tortuga"
+sail_to sails with "Havana", 15`}</code>
+                </pre>
+              </div>
 
-# Simple repeat loops
-repeat 3 times bark "BOOM!"`}</code>
-              </pre>
+              <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+                <h3 className="flex items-center text-lg font-semibold mb-4">
+                  <Filter className="w-5 h-5 mr-2 text-red-500" />
+                  List Operations 
+                </h3>
+                <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                  <code>{`# Map, Filter, Reduce operations
+numbers be list of 1, 2, 3, 4, 5
+doubled be map sails with numbers, "double"
+evens be filter sails with numbers, "is_even"
+
+# New list features
+shuffled be shuffle sails with original
+weighted be weighted_choice sails with 
+  options, weights`}</code>
+                </pre>
+              </div>
+
+              <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+                <h3 className="flex items-center text-lg font-semibold mb-4">
+                  <Clover className="w-5 h-5 mr-2 text-red-500" />
+                  String Operations
+                </h3>
+                <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                  <code>{`# New string operations
+bark shout sails with "ahoy matey!"
+
+# Split strings
+treasure_str be "gold,silver,gems"
+loot be split_loot sails with 
+  treasure_str, ","
+
+# Join strings
+crew be list of "Jack", "Anne", "Mary"
+bark join_crew sails with crew, " & "`}</code>
+                </pre>
+              </div>
+
+              <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+                <h3 className="flex items-center text-lg font-semibold mb-4">
+                  <RefreshCw className="w-5 h-5 mr-2 text-red-500" />
+                  Import & Modularity
+                </h3>
+                <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
+                  <code>{`# Import functionality
+import map
+import treasure_utils
+
+# Use imported functions
+find_treasure sails with
+chart_course sails with "Tortuga"`}</code>
+                </pre>
+              </div>
             </div>
 
-            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
               <h3 className="flex items-center text-lg font-semibold mb-4">
-                <Clover className="w-5 h-5 mr-2 text-red-500" />
-                Error Handling
+                <Hash className="w-5 h-5 mr-2 text-red-500" />
+                Enhanced Features
               </h3>
-              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
-                <code>{`brace for impact:
-    bark "Attempting dangerous waters"
-if capsized, bark "Error, Capsized!"`}</code>
-              </pre>
-            </div>
-
-            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-              <h3 className="flex items-center text-lg font-semibold mb-4">
-                <Filter className="w-5 h-5 mr-2 text-red-500" />
-                Advanced List Operations
-              </h3>
-              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
-                <code>{`# Map with inline operations
-coins be list of 1, 2, 3 where each times 2
-
-# Filter lists
-big_coins be coins where it greater_than 5
-
-# Reduce operation
-total be reduce coins with result plus it`}</code>
-              </pre>
-            </div>
-
-            <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-              <h3 className="flex items-center text-lg font-semibold mb-4">
-                <Languages className="w-5 h-5 mr-2 text-red-500" />
-                Dialects & String Operations
-              </h3>
-              <pre className="bg-black/50 rounded-md p-4 text-sm mb-4">
-                <code>{`# Custom dialects
-dialect Caribbean:
-    "shout" be "bark"
-    "expedition" be "voyage"
-end dialect
-
-# String operations
-greeting be "hello world" upper
-words be greeting split " "
-sentence be words join ", "`}</code>
-              </pre>
-            </div>
-          </div>
-
-          <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-            <h3 className="flex items-center text-lg font-semibold mb-4">
-              <Hash className="w-5 h-5 mr-2 text-red-500" />
-              Switch Statements
-            </h3>
-            <pre className="bg-black/50 rounded-md p-4 text-sm">
-              <code>{`choose x:
-    case 1: bark "one"
-    case 2: bark "two"
-    default: bark "unknown"
-end choose`}</code>
-            </pre>
-          </div>
-          <div className="mt-6 bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
-            <h3 className="flex items-center text-lg font-semibold mb-4">
-              <Hash className="w-5 h-5 mr-2 text-red-500" />
-              Math and Randomization
-            </h3>
-            <pre className="bg-black/50 rounded-md p-4 text-sm">
-              <code>{`roll_dice sails with 20
-random_float sails with 10,20
-crew be list of 1,2,3,4,5
-random_pick sails with crew
-random_sample sails with crew, 3
-normal_random,
-factorial sails with 5
-sin sails with 1
-cos sails with 2
-tan sails with 3
-exp sails with 1
-log sails with 2
-mean sails with list of 1, 2, 3
-median sails with list of 1, 2, 3, 1, 2
-sum sails with list of 1, 2, 3, 6
+              <pre className="bg-black/50 rounded-md p-4 text-sm">
+                <code>{`# Fixed parser issues
+random_sample sails with crew, 2
+random_float sails with 1, 10
 flip_coin sails with
-roll_multiple sails with 3, 6
-              `}</code>
-            </pre>
+
+# Parentheses support
+result be (5 plus 3) times 2
+
+# First mate now inactive by default
+revive_first_mate  # To enable
+
+# Fixed plunder loop
+plunder each sailor from crew:
+    bark "Welcome aboard", sailor
+end plunder`}</code>
+              </pre>
+            </div>
           </div>
         </div>
-      <div className="grid gap-4">
-        </div>
+
+        <div className="mb-16">
           <div className="flex items-center mb-6">
             <Compass className="w-6 h-6 mr-2 text-red-500" />
             <h2 className="text-2xl font-bold text-white">Quick Start</h2>
@@ -215,7 +203,6 @@ bark total  # Outputs: 8`}
           ))}
         </div>
 
-
         <div className="mb-16">
           <div className="flex items-center mb-6">
             <Anchor className="w-6 h-6 mr-2 text-red-500" />
@@ -237,7 +224,6 @@ calculate_treasure sails with 100, 50`}</code>
             </div>
           </div>
         </div>
-
 
         <div className="mb-16">
           <div className="flex items-center mb-6">
@@ -289,22 +275,165 @@ worst be abandon sails with loot`}</code>
           </div>
         </div>
 
-        <div>
+        <div className="mb-16">
           <div className="flex items-center mb-6">
             <Terminal className="w-6 h-6 mr-2 text-red-500" />
-            <h2 className="text-2xl font-bold text-white">Debug Tools</h2>
+            <h2 className="text-2xl font-bold text-white">Debug & Type System</h2>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
             <pre className="bg-black/50 rounded-md p-4 text-sm">
               <code>{`# View current variable state
 debug_chest
 
-# Type checking
+# Type checking and conversion
 type_val be type_of sails with treasure
-bark type_val  # Outputs: number`}</code>
+to_int sails with "42"
+to_float sails with "3.14"
+to_str sails with 123`}</code>
             </pre>
           </div>
         </div>
+
+        <div className="mb-16">
+          <div className="flex items-center mb-6">
+            <Hash className="w-6 h-6 mr-2 text-red-500" />
+            <h2 className="text-2xl font-bold text-white">Advanced Math Operations</h2>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`# Basic Math
+result be (5 plus 3) times 2
+power_val be 2 power 3
+sqrt sails with 16
+abs sails with -42
+round sails with 3.7
+
+# Trigonometry & Complex Math
+sin sails with 1
+cos sails with 2
+tan sails with 3
+exp sails with 1
+log sails with 2
+factorial sails with 5
+
+# Comparisons & Logic
+result be x greater_or_equal y
+result be x less_or_equal y
+result be not (x equals y)
+condition be a and b
+condition be a or b`}</code>
+            </pre>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex items-center mb-6">
+            <RefreshCw className="w-6 h-6 mr-2 text-red-500" />
+            <h2 className="text-2xl font-bold text-white">Advanced List Operations</h2>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`# Statistical Operations
+mean sails with list of 1, 2, 3
+median sails with list of 1, 2, 3, 1, 2
+sum sails with list of 1, 2, 3, 6
+
+# Pattern Operations
+coins be list of 1, 2, 3 where each times 2
+big_coins be coins where it greater_than 5
+
+# List Transformations
+double_values be map sails with numbers, "double"
+even_numbers be filter sails with numbers, "is_even"
+total be reduce numbers with result plus it
+
+# Random Operations
+shuffled be shuffle sails with crew
+sample be random_sample sails with crew, 3
+chosen be random_pick sails with options
+weighted be weighted_choice sails with 
+  options, weights`}</code>
+            </pre>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex items-center mb-6">
+            <Languages className="w-6 h-6 mr-2 text-red-500" />
+            <h2 className="text-2xl font-bold text-white">Error Handling & Flow Control</h2>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`# Error Handling
+brace for impact:
+    bark "Attempting dangerous waters"
+if capsized, bark "Error, Capsized!"
+
+# Switch Statements
+choose x:
+    case 1: bark "one"
+    case 2: bark "two"
+    default: bark "unknown"
+end choose
+
+# Loop Control
+while counter be less_than 3:
+    bark counter
+end while
+
+plunder each coin from treasure_chest:
+    bark coin
+end plunder
+
+repeat 3 times:
+    bark "BOOM!"
+end repeat`}</code>
+            </pre>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex items-center mb-6">
+            <Hash className="w-6 h-6 mr-2 text-red-500" />
+            <h2 className="text-2xl font-bold text-white">Random Operations</h2>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`# Basic Random
+roll_dice sails with 20
+flip_coin sails with
+random_float sails with 10,20
+random_pick sails with crew
+
+# Advanced Random
+roll_multiple sails with 3, 6
+normal_random sails with 0, 1
+random_sample sails with crew, 3`}</code>
+            </pre>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex items-center mb-6">
+            <Languages className="w-6 h-6 mr-2 text-red-500" />
+            <h2 className="text-2xl font-bold text-white">Dialects & String Operations</h2>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6">
+            <pre className="bg-black/50 rounded-md p-4 text-sm">
+              <code>{`# Custom dialects
+dialect Caribbean:
+    "shout" be "bark"
+    "expedition" be "voyage"
+end dialect
+
+# String Operations
+text be shout sails with "hello"
+parts be split_loot sails with "a,b,c", ","
+result be join_crew sails with crew, " & "`}</code>
+            </pre>
+          </div>
+        </div>
+
       </div>
     </div>
   );

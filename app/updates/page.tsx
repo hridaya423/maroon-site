@@ -1,9 +1,41 @@
 'use client'
 import React from 'react';
-import { Skull, Ship, Anchor } from 'lucide-react';
+import { Skull, Ship, Anchor, Code } from 'lucide-react';
 
 const UpdatesSection = () => {
     const updates = [
+      {
+        version: "1.2.0",
+        date: "26 January 2024",
+        highlights: [
+          {
+            title: "Playground",
+            description: "New Feature in the site! Go play with the maroon language in the maroon playground",
+            icon: <Code className="w-6 h-6" />
+          },
+          {
+            title: "Import functionality",
+            description: "Modularise your code, ye scurvy scallywag",
+            icon: <Ship className="w-6 h-6" />
+          },
+          {
+            title: "New String Operations",
+            description: "Quickly change a script with new operations such as shout, split_loot, join_crew",
+            icon: <Anchor className="w-6 h-6" />
+          }
+        ],
+        changes: [
+          "Allowed functions to have default parameters",
+          "Fixed parser issues regarding random sample, random float, flip coin",
+          "Added comparisons",
+          "Added map, filter, reduce",
+          "Fixed list declaration parsing",
+          "Added support for parentheses",
+          "Changed first mate to be inactive by default",
+          "Added shuffle and weighted choice",
+          "Fixed issues regarding plunder loop"
+        ]
+      },
       {
         version: "1.1.0",
         date: "27 December 2024",
@@ -61,7 +93,6 @@ const UpdatesSection = () => {
         ]
       }
     ];
-  
     return (
       <div className="relative min-h-screen bg-black text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,black_100%)]" />

@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import { Github, Menu, X, Scroll, Anchor, Ship, Code } from 'lucide-react';
+import { Github, Menu, X, Scroll, Anchor, Ship, Code, BookCheck } from 'lucide-react';
 import Link from 'next/link';
 
 export const Navbar = () => {
@@ -36,7 +36,8 @@ export const Navbar = () => {
               {[
                 { href: "/features", icon: Anchor, label: "Features" },
                 { href: "/docs", icon: Scroll, label: "Docs" },
-                { href: "/examples", icon: Code, label: "Examples" },
+                { href: "/examples", icon: BookCheck, label: "Examples" },
+                { href: "/ide", icon: Code, label: "Playground" },
               ].map(({ href, icon: Icon, label }) => (
                 <a
                   key={label}
@@ -47,6 +48,7 @@ export const Navbar = () => {
                   <div className="relative flex items-center space-x-2">
                     <Icon className="w-4 h-4 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                     <span className="group-hover:text-red-500 transition-colors duration-300">{label}</span>
+                    
                   </div>
                 </a>
               ))}

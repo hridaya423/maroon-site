@@ -7,8 +7,9 @@ const navigationData = {
     items: [
       { title: "Quick Start", href: "/docs" },
       { title: "Examples", href: "/examples" },
+      { title: "Updates", href: "/updates" },
       { title: "IDE", href: "/ide" },
-      { title: "Updates", href: "/updates" }
+      
     ],
   },
   "Crew's Quarters": {
