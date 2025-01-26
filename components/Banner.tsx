@@ -33,7 +33,7 @@ const UpdatesBanner = () => {
                 </div>
                 
                 <span className="text-gray-300 text-sm">
-                  Ahoy matey! New booty arrived in Maroon v1.2
+                  Ahoy matey! New booty arrived in Maroon v1.2 - The Crew Expansion
                 </span>
                 
                 <a 
