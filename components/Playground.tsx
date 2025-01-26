@@ -5,16 +5,16 @@ import Editor from '@monaco-editor/react';
 import { Ship, Terminal } from 'lucide-react';
 
 const DEFAULT_CODE = `# Declare your treasure
+# Declare your treasure
 treasure be 42
 
 # Set sail on a new voyage
 voyage greet(name):
-    bark "Ahoy," name
-    bark "Welcome aboard!"
+    bark name, "welcome to yer ship"
 end voyage
 
 # Start the adventure
-greet sails with "Captain"`;
+greet sails with "Captain "`;
 
 const MAROON_MODULES = [
   'exceptions.py',
