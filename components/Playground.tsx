@@ -269,7 +269,7 @@ interpreter = PirateInterpreter()
                 autoIndent: 'full',
                 formatOnPaste: true,
                 formatOnType: true,
-                suggestOnTriggerCharacter: true,
+                suggestOnTriggerCharacters: true,
               }}
               beforeMount={setupMonaco}
             />
