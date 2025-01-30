@@ -5,8 +5,21 @@ import { Skull, Ship, Anchor, Code } from 'lucide-react';
 const UpdatesSection = () => {
     const updates = [
       {
+        version: "1.2.1",
+        date: "30 January 2025",
+        highlights: [],
+        changes: [
+          "Added Built-In help function",
+          "Added check_type",
+          "Added assert_type",
+          "Added is_list_of_type",
+          "Added Syntax Highlighting to Maroon Playground",
+          "Improved responsiveness for Maroon Playground"
+        ]
+      },
+      {
         version: "1.2.0",
-        date: "26 January 2024",
+        date: "26 January 2025",
         highlights: [
           {
             title: "Playground",

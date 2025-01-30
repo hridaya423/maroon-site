@@ -60,11 +60,12 @@ treasure be 42
 
 # Set sail on a new voyage
 voyage greet(name):
-    bark name, "welcome to yer ship"
+    bark "Ahoy," name
+    bark "Welcome aboard!"
 end voyage
 
 # Start the adventure
-greet sails with "Captain "`}
+greet sails with "Captain"`}
                 </code>
               </pre>
             </div>

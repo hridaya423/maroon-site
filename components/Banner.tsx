@@ -33,7 +33,7 @@ const UpdatesBanner = () => {
                 </div>
                 
                 <span className="text-gray-300 text-sm">
-                  Ahoy matey! New booty arrived in Maroon v1.2 - The Crew Expansion
+                  Aye Aye! New treasure arrived in Update v1.2.1 - The Captain&apos;s Reshuffle
                 </span>
                 
                 <a 
@@ -41,7 +41,7 @@ const UpdatesBanner = () => {
                   className="inline-flex items-center text-red-500 hover:text-red-400 text-sm group/link"
                 >
                   <span className="border-b border-dashed border-red-500 group-hover/link:border-red-400">
-                    View the Loot
+                    View the Booty
                   </span>
                   <span className="ml-1 transform group-hover/link:translate-x-1 transition-transform duration-200">
                     →

@@ -68,7 +68,6 @@ end expedition`
               </div>
             ))}
           </div>
-
           <div className="mt-24 relative group perspective-1000">
             <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-900 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000" />
             <div className="relative bg-black/90 backdrop-blur-xl p-8 rounded-xl border border-red-900/50 transform group-hover:[transform:rotateX(2deg)] transition-all duration-300">
@@ -109,7 +108,6 @@ greet sails with "Captain"`}</code>
           </div>
         </div>
       </div>
-
       <style jsx global>{`
         .perspective-1000 {
           perspective: 1000px;

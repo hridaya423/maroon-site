@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Ship, Compass, Skull, Anchor, Package, BookOpen, Hash, Code, Clover, Languages, Filter, RefreshCw } from 'lucide-react';
+import { Terminal, Ship, Compass, Skull, Anchor, Package, BookOpen, Hash, Code, Clover, Languages, Filter, RefreshCw, Book, TestTube } from 'lucide-react';
 
 export default function MaroonDocs() {
   return (
@@ -145,7 +145,8 @@ bark treasure
 gold be 5
 silver be 3
 total be gold plus silver
-bark total  # Outputs: 8`}
+bark total
+`}
               </code>
             </pre>
           </div>
@@ -153,6 +154,13 @@ bark total  # Outputs: 8`}
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {[
+            {
+              title: "Help",
+              icon: <Book className="w-8 h-8 text-red-500" />,
+              content: [
+                "Help on every inbuilt function with usage"
+              ]
+            },
             {
               title: "Variables & Types",
               icon: <Package className="w-8 h-8 text-red-500" />,
@@ -182,7 +190,16 @@ bark total  # Outputs: 8`}
                 "plunder (max value)",
                 "abandon (min value)"
               ]
-            }
+            },
+            {
+              title: "Type Checking",
+              icon: <TestTube className="w-8 h-8 text-red-500" />,
+              content: [
+                "check_type",
+                "assert_type",
+                "is_list_of_type"
+              ]
+            },
           ].map((feature, index) => (
             <div key={index} className="bg-gray-900/50 backdrop-blur-xl rounded-lg border border-red-900/50 p-6 transform hover:scale-105 transition-all duration-300">
               <div className="flex items-center justify-center mb-4">
